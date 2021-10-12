@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sample Dashboard Design</title>
+</head>
+<body>
+    <header class="headerDesign">
+        <div class="headerInner p-2">
+            <div class="firstSection">
+                <h3>Company Dashboard</h3>
+            </div>
+            <div class="secondSection">
+                <span class="btn p-2">
+                    <i class="far fa-envelope"></i>
+                </span>
+                <span class="btn p-2">
+                    <i class="far fa-bell"></i>
+                </span>
+                <span class="btn profileDesign">
+                    <img src="./assets/images/profile.jpg">
+                    Kamyab 
+                </span>
+            </div>
+        </div>
+    </header>
+    <main class="mainDesign">
+        <aside class="navbarDesign p-3">
+            <ul>
+                <li class="btn p-2">
+                    <i class="far fa-clock"></i>
+                    Dashboard
+                    <span>5</span>
+                </li>
+                <li class="btn p-2">
+                    <i class="fas fa-calendar"></i>
+                    Events
+                    <span>14</span>
+                </li>
+                <li class="btn p-2">
+                    <i class="fas fa-clipboard"></i>
+                    Requests
+                </li>
+                <li class="btn p-2">
+                    <i class="fas fa-users"></i>
+                    Users List
+                </li>
+                <li class="btn p-2">
+                    <i class="fas fa-envelope"></i>
+                    Inbox
+                </li>
+                <li class="btn p-2">
+                    <i class="fa fa-money-bill"></i>
+                    Income
+                </li>
+                <!-- <li class="btn btn-sm btn-outline-info">
+                    <i class="fas fa-hand-pointer"></i>
+                    Upgrade To Pro
+                </li> -->
+            </ul>
+            <div class="copyRight">
+                <h6>
+                    <a href="https://zil.ink/kamyabt" target="blank">Designed By Kamyab Tanhaie 2021</a>
+                </h6>
+            </div>
+        </aside>
+        <section class="contentSection p-3">
+            <div class="mainTitle p-3 m-3">Dashboard</div>
+            <div class="mainBoxes">
+                <div class="boxDesign p-2 m-3 bg-warning">
+                    <div class="m-3">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="innerBox">
+                        <span class="d-block">Today's Events</span>
+                        <span class="d-block text-center">4</span>
+                    </div>
+                </div>
+                <div class="boxDesign p-2 m-3 bg-success">
+                    <div class="m-3">
+                        <i class="far fa-chart-bar"></i>
+                    </div>
+                    <div class="innerBox">
+                        <span class="d-block">Sales</span>
+                        <span class="d-block">$ 1.345</span>
+                    </div>
+                </div>
+                <div class="boxDesign p-2 m-3 bg-danger">
+                    <div class="m-3">
+                        <i class="fab fa-youtube-square"></i>
+                    </div>
+                    <div class="innerBox">
+                        <span class="d-block">Subscribers</span>
+                        <span class="d-block">1303</span>
+                    </div>
+                </div>
+                <div class="boxDesign p-2 m-3 bg-primary">
+                    <div class="m-3">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="innerBox">
+                        <span class="d-block">Orders</span>
+                        <span class="d-block">576</span>
+                    </div>
+                </div>
+            </div>
+            <div class="secondContentSection">
+                <div class="homeElements p-3 m-3 bor-ra">
+                    <h5 class="elementsTitle bg-lime p-2">This Month Income</h5>
+                    <div class="salaryTable">
+                        <ul>
+                            <li class="p-2 incomeItem">1
+                                <span class="p-1">$250</span>
+                            </li>
+                            <li class="p-2 incomeItem">2
+                                <span class="p-1">$123</span>
+                            </li>
+                            <li class="p-2 incomeItem">3
+                                <span class="p-1">$487</span>
+                            </li>
+                            <li class="p-2 incomeItem">4
+                                <span class="p-1">$364</span>
+                            </li>
+                            <li class="p-2 incomeItem">5
+                                <span class="p-1">$812</span>
+                            </li>
+                            <li class="elementsTitle bg-lime p-2">
+                                <strong>Total</strong>
+                                <span class="p-1" id="totalIncomeCalculation">---</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="homeElements p-3 m-3 bor-ra">
+                    <h5 class="elementsTitle bg-lime p-2">Latest Comments</h5>
+                    <div class="commentsTable">
+                        <ul>
+                            <li class="p-2">1
+                                <span>it was an awesome video, I loved it</span>
+                                <span class="bg-warning p-1 bor-ra">Pending</span>
+                            </li>
+                            <li class="p-2">2
+                                <span>good videos, itt was fantastic</span>
+                                <span class="bg-lime p-1 bor-ra">Accepted</span>
+                            </li>
+                            <li class="p-2">3
+                                <span>When do you creaye another Try Not To Laugh video ???</span>
+                                <span class="bg-lime p-1 bor-ra">Accepted</span>
+                            </li>
+                            <li class="p-2">4
+                                <span>Thank you for the vlog, I was looking for sth like this</span>
+                                <span class="bg-warning p-1 bor-ra">Pending</span>
+                            </li>
+                            <li class="p-2">5
+                                <span>Can I havce your home address please ??</span>
+                                <span class="bg-danger p-1 bor-ra">Rejected</span>
+                            </li>
+                            <li class="p-2">6
+                                <span>Please create a new vlog from that country</span>
+                                <span class="bg-lime p-1 bor-ra">Accepted</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="thirdSection p-3 m-3 bor-ra">
+                <h5 class="homeElements p-2">Latest Company News</h5>
+                <div class="newsSection p-2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptas atque necessitatibus, fuga ab sit aut modi in, quae excepturi rem iure quas fugit. Saepe commodi totam quas! Deleniti, quidem.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>

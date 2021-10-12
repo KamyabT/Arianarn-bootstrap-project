@@ -1,0 +1,242 @@
+/****************Colors****************/
+$firstColor: #fff;
+$secondaryColor: #000;
+$thirdColor: #f2f3f8;
+$fourthColor: #2a3143;
+$fifthColor: #0179ff;
+$sixthColor: #ffd9aa;
+$seventhColor: #dc3545;
+$eighthColor: #e7e7e7;
+$ninethColor: #32CD32;
+
+
+
+/****************All****************/
+
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.bg-lime {
+  background-color: $ninethColor;
+}
+
+.bor-ra {
+  border-radius: 5px;
+}
+
+/****************Design****************/
+
+
+.headerDesign {
+  background-color: $fifthColor;
+  padding: 10px 15px;
+  .headerInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .firstSection {
+      display: flex;
+      align-items: center;
+      h3 {
+        color: $firstColor;
+      }
+    }
+    .secondSection {
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 22px;
+        color: $firstColor;
+        padding: 5px;
+        color: $firstColor;
+        border-radius: 5px;
+        &:hover {
+          border-radius: 5px;
+          padding: 5px;
+          background-color: $firstColor;
+          color: $seventhColor;
+          transition: all 300ms ease;
+        }
+      }
+      .profileDesign {
+        display: flex;
+        align-items: center;
+        img {
+          width: 30px;
+          margin-right: 10px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+.mainDesign {
+  display: flex;
+
+  .navbarDesign {
+    width: 300px;
+    background-color: $fourthColor;
+    height: calc(100vh - 87px);
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // border-top: 0.5px solid #ccc;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      li {
+        position: static;
+        color: $firstColor;
+        text-align: left;
+        i {
+          margin-right: 5px;
+          width: 20px;
+        }
+        &:hover {
+          background-color: $firstColor;
+          color: $secondaryColor;
+          transform: scale(1.05);
+          transition: all 300ms ease;
+          span {
+            background-color: $fifthColor;
+            border-radius: 25px;
+            color: $firstColor;
+            padding: 0px 5px;
+          }
+        }
+        span {
+          float: right;
+        }
+      }
+    }
+    .copyRight {
+      color: $firstColor;
+      text-align: center;
+      a {
+        color: $firstColor;
+        &:hover {
+          border-radius: 5px;
+          padding: 5px;
+          background-color: $firstColor;
+          color: $secondaryColor;
+          transform: scale(1.05);
+          transition: all 300ms ease;
+        }
+      }
+      h6 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .contentSection {
+    background-color: $thirdColor;
+    width: calc(100% - 300px);
+
+    .mainTitle {
+      background-color: $sixthColor;
+      border-radius: 5px;
+    }
+    .mainBoxes {
+      display: flex;
+      .boxDesign {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: calc((100% - 20px)/4);
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px #ccc;
+        &:hover {
+          transform: scale(1.05);
+          transition: all 700ms ease;
+          box-shadow: 5px 5px 10px #ccc;
+        }
+        i {
+          font-size: 45px;
+          color: $firstColor;
+        }
+        .innerBox {
+          color: $firstColor;
+          font-size: 20px;
+        }
+      }
+    }
+    .secondContentSection {
+      display: flex;
+      .homeElements {
+        width: calc((100% - 50px)/2);
+        height: 100%;
+        background-color: $eighthColor;
+        .elementsTitle {
+          border-radius: 5px;
+          &:hover {
+            transform: scale(1.02);
+            transition: all 700ms ease;
+            box-shadow: 5px 5px 10px #ccc;
+          }
+        }
+        .salaryTable {
+          ul{
+            list-style: none;
+            padding: 0;
+            li {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding-left: 10px !important;
+              &:hover {
+                border-radius: 5px;
+                padding-right: 5px;
+                background-color: $firstColor;
+                transition: all 300ms ease;
+                transform: scale(1.02);
+              }
+            }
+            li:last-child {
+              
+            }
+          }
+        }
+      }
+      .commentsTable {
+
+        ul{
+          list-style: none;
+          padding: 0;
+          li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10px !important;
+            &:hover {
+              border-radius: 5px;
+              padding-right: 5px;
+              background-color: $firstColor;
+              transition: all 300ms ease;
+              transform: scale(1.02);
+            }
+          }
+        }
+      }
+    }
+    .thirdSection {
+      background-color: $eighthColor;
+      .newsSection {
+
+      }
+    }
+  }
+}

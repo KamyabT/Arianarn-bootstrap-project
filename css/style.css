@@ -1,0 +1,246 @@
+/****************Colors****************/
+/****************All****************/
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-lime {
+  background-color: #32CD32;
+}
+
+.bor-ra {
+  border-radius: 5px;
+}
+
+/****************Design****************/
+.headerDesign {
+  background-color: #0179ff;
+  padding: 10px 15px;
+}
+
+.headerDesign .headerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerDesign .headerInner .firstSection {
+  display: flex;
+  align-items: center;
+}
+
+.headerDesign .headerInner .firstSection h3 {
+  color: #fff;
+}
+
+.headerDesign .headerInner .secondSection {
+  display: flex;
+  align-items: center;
+}
+
+.headerDesign .headerInner .secondSection span {
+  font-size: 22px;
+  color: #fff;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.headerDesign .headerInner .secondSection span:hover {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fff;
+  color: #dc3545;
+  transition: all 300ms ease;
+}
+
+.headerDesign .headerInner .secondSection .profileDesign {
+  display: flex;
+  align-items: center;
+}
+
+.headerDesign .headerInner .secondSection .profileDesign img {
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.mainDesign {
+  display: flex;
+}
+
+.mainDesign .navbarDesign {
+  width: 300px;
+  background-color: #2a3143;
+  height: calc(100vh - 87px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainDesign .navbarDesign ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainDesign .navbarDesign ul li {
+  position: static;
+  color: #fff;
+  text-align: left;
+}
+
+.mainDesign .navbarDesign ul li i {
+  margin-right: 5px;
+  width: 20px;
+}
+
+.mainDesign .navbarDesign ul li:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+  transition: all 300ms ease;
+}
+
+.mainDesign .navbarDesign ul li:hover span {
+  background-color: #0179ff;
+  border-radius: 25px;
+  color: #fff;
+  padding: 0px 5px;
+}
+
+.mainDesign .navbarDesign ul li span {
+  float: right;
+}
+
+.mainDesign .navbarDesign .copyRight {
+  color: #fff;
+  text-align: center;
+}
+
+.mainDesign .navbarDesign .copyRight a {
+  color: #fff;
+}
+
+.mainDesign .navbarDesign .copyRight a:hover {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+  transition: all 300ms ease;
+}
+
+.mainDesign .navbarDesign .copyRight h6 {
+  margin-bottom: 0;
+}
+
+.mainDesign .contentSection {
+  background-color: #f2f3f8;
+  width: calc(100% - 300px);
+}
+
+.mainDesign .contentSection .mainTitle {
+  background-color: #ffd9aa;
+  border-radius: 5px;
+}
+
+.mainDesign .contentSection .mainBoxes {
+  display: flex;
+}
+
+.mainDesign .contentSection .mainBoxes .boxDesign {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: calc((100% - 20px)/4);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #ccc;
+}
+
+.mainDesign .contentSection .mainBoxes .boxDesign:hover {
+  transform: scale(1.05);
+  transition: all 700ms ease;
+  box-shadow: 5px 5px 10px #ccc;
+}
+
+.mainDesign .contentSection .mainBoxes .boxDesign i {
+  font-size: 45px;
+  color: #fff;
+}
+
+.mainDesign .contentSection .mainBoxes .boxDesign .innerBox {
+  color: #fff;
+  font-size: 20px;
+}
+
+.mainDesign .contentSection .secondContentSection {
+  display: flex;
+}
+
+.mainDesign .contentSection .secondContentSection .homeElements {
+  width: calc((100% - 50px)/2);
+  height: 100%;
+  background-color: #e7e7e7;
+}
+
+.mainDesign .contentSection .secondContentSection .homeElements .elementsTitle {
+  border-radius: 5px;
+}
+
+.mainDesign .contentSection .secondContentSection .homeElements .elementsTitle:hover {
+  transform: scale(1.02);
+  transition: all 700ms ease;
+  box-shadow: 5px 5px 10px #ccc;
+}
+
+.mainDesign .contentSection .secondContentSection .homeElements .salaryTable ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mainDesign .contentSection .secondContentSection .homeElements .salaryTable ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px !important;
+}
+
+.mainDesign .contentSection .secondContentSection .homeElements .salaryTable ul li:hover {
+  border-radius: 5px;
+  padding-right: 5px;
+  background-color: #fff;
+  transition: all 300ms ease;
+  transform: scale(1.02);
+}
+
+.mainDesign .contentSection .secondContentSection .commentsTable ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mainDesign .contentSection .secondContentSection .commentsTable ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px !important;
+}
+
+.mainDesign .contentSection .secondContentSection .commentsTable ul li:hover {
+  border-radius: 5px;
+  padding-right: 5px;
+  background-color: #fff;
+  transition: all 300ms ease;
+  transform: scale(1.02);
+}
+
+.mainDesign .contentSection .thirdSection {
+  background-color: #e7e7e7;
+}
+/*# sourceMappingURL=style.css.map */
